@@ -1,0 +1,59 @@
+import TableSearch from "@/app/components/TableSearch"
+import { GiSettingsKnobs } from "react-icons/gi";
+import { FaPlus } from "react-icons/fa";
+import { BsSortDown } from "react-icons/bs";
+import Pagination from "@/app/components/Pagination";
+import Table from "@/app/components/Table";
+
+
+const coloms = [
+  {
+    header: "Info",
+    accessor: "info",
+  },
+  {
+    header: "Teacher ID",
+    accessor: "teacherId",
+    className: "hidden md:table-cell",
+  },
+  {
+    header: "Teacher ID",
+    accessor: "teacherId",
+    className: "hidden md:table-cell",
+  },
+]
+
+
+
+const TeacherListPage = () => {
+    return (
+        <div className="bg-white p-4 rounded-md flex-1 m-4 mt-8">TeachersList
+         {/* Top section */}
+        <div className="flex items-center justify-between">
+            <h1 className=" hidden md:block text-lg font-semibold">All Teacher</h1>
+
+            <div className="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
+            <TableSearch/> 
+ 
+               <div className="flex gap-4 items-center self-end">
+                  <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow"><GiSettingsKnobs/></button>
+                  <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow"><BsSortDown/></button>
+                  <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow"><FaPlus/></button>
+               </div> 
+            </div>
+        </div>
+          {/* List */}
+          <div className="">
+            <Table/>
+          </div>
+          {/* PAGINATION */}
+          <div className="">
+            <Pagination/>
+          </div>
+
+        </div>
+    )
+     
+}
+
+export default TeacherListPage
