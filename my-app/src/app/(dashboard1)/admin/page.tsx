@@ -17,6 +17,7 @@ function Adminpage() {
           <UserCard type = "teacher"/>
           <UserCard type = "parent"/>
           <UserCard type = "staff"/>
+          
         </div>
 
         {/* Middle Charts */}
