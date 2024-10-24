@@ -6,7 +6,7 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 
 function Parentpage() {
   return (
-    <div className="p-4 flex flex-col xl:flex-row">
+    <div className="p-4 mt-16 flex flex-col xl:flex-row">
       {/* Left side */}
       <div className="w-full xl:w-2/3">
         <div className="h-full bg-white p-4 rounded-md">

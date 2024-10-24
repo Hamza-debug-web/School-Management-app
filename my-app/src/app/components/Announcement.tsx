@@ -34,13 +34,13 @@ export default function Announcement() {
   };
 
   return (
-    <div className="bg-white p-4 rounded-md space-y-6">
+    <div className="bg-white p-4 rounded-md space-y-6 ">
       <div className="flex items-center justify-between mb-4 ">
         <h1 className="text-xl font-semibold ">Announcement </h1>
         <span className="text-sm text-gray-400">All</span>
       </div>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 ">
         {faqs.map((faq, index) => (
           <div
             key={index}
@@ -51,7 +51,7 @@ export default function Announcement() {
               className="w-full flex items-center justify-between p-4 text-left font-medium hover:no-underline"
             >
               <h2 className="text-lg">{faq.question}</h2>
-              <span className="text-xs text-gray-400 bg-white p-1 rounded-md">
+              <span className="text-xs  bg-white p-1 rounded-md">
                 {faq.date}
               </span>
             </button>

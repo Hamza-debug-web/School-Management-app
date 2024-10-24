@@ -18,7 +18,7 @@ const BigCalendar = () => {
   }
 
   return (
-    <div className="h-[500px] w-full">
+    <div className="">
       <Calendar
         localizer={localizer}
         events={myEventsList}
@@ -30,6 +30,7 @@ const BigCalendar = () => {
         min={new Date(2024, 6, 12, 7, 0)}
         max={new Date(2024, 6, 12, 17, 0)}
         defaultDate={new Date(2024, 6, 12)}
+        style={{height: "98%"}}
       />
     </div>
   )

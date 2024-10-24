@@ -17,7 +17,7 @@
 
 .react-calendar__navigation__label__labelText{
     font-weight: 600;
-    font-size: x-large !important;
+  
 }
 
 .rbc-btn-group:first-child{
@@ -26,7 +26,7 @@
 
 .rbc-toolbar-label{
     text-align: right !important;
-    padding: 0ps 20px !important;
+    padding: 0px 20px !important;
 }
 
 .rbc-btn-group:last-child{
@@ -69,10 +69,12 @@
     display: flex;
     flex-direction: row; /* Ensures events align horizontally */
   }
-  
+  .rbc-time-gutter.rbc-time-column .rbc-timeslot-group {
+    padding: 0px 20px !important;
+  }
   .rbc-time-gutter.rbc-time-colum {
     font-size: 12px !important;
-    padding-left: 10px !important;
+   
   }
   
   .rbc-timeslot-group {
@@ -80,7 +82,7 @@
 }
   
   .rbc-day-slot {
-    font-size: 13px !important;
+    font-size: 14px !important;
      
   }
   

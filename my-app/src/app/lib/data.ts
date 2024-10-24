@@ -294,10 +294,5 @@
       end: new Date(2024, 6, 12, 14, 45),   // Adjusted to July 12
     },
 
-     {
-      title: "Computer",
-      allDay: false,
-      start: new Date(2024, 6, 12, 14, 0), // Adjusted to July 12
-      end: new Date(2024, 6, 12, 14, 45),   // Adjusted to July 12
-    },
+    
   ];

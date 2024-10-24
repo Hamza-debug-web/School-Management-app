@@ -27,7 +27,7 @@ export default function DashLayout({
         </div>
 
         {/* Right side (content area) */}
-        <div className="ml-[14%] md:ml-[8%] lg:ml-[16%] xl:ml-[14%] w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%]">
+        <div className="ml-[14%] md:ml-[8%] lg:ml-[16%] xl:ml-[14%] w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%] mb-10">
           <Navbar />
           {children}
         </div>
