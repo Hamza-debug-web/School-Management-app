@@ -11,7 +11,7 @@ import { role, teachersData } from "@/app/lib/data";
 
 type Teacher = {
   id:number;
-  TeacherId:number;
+  teacherId:number;
   name:string;
   email:string;
   photo:string;
@@ -74,10 +74,10 @@ const TeacherListPage = () => {
         <div className="flex flex-col">
           <h1 className="font-semibold">{item.name}</h1>
           <p className="text-xs text-gray-500">{item.email}</p>
-        </div>
+        </div> 
       </td>
 
-      <td className="hidden md:table-cell">{item.TeacherId}</td>
+      <td className="hidden md:table-cell">{item.teacherId}</td>
       <td className="hidden md:table-cell">{item.subjects.join(",")}</td>
       <td className="hidden md:table-cell">{item.classes.join(",")}</td>
       <td className="hidden md:table-cell">{item.phone}</td>
