@@ -7,7 +7,7 @@
     id: 1,
     teacherId: "786",
     name: "Bilal",
-    email: "Bilal@gmail.com",
+    email: "Bilal@gmail.com", 
     photo: "/images/boy1.png",
     phone: "03334567890",
     subjects: ["Math", "Computer"],
@@ -294,5 +294,10 @@
       end: new Date(2024, 6, 12, 14, 45),   // Adjusted to July 12
     },
 
-    
+     {
+      title: "Computer",
+      allDay: false,
+      start: new Date(2024, 6, 12, 14, 0), // Adjusted to July 12
+      end: new Date(2024, 6, 12, 14, 45),   // Adjusted to July 12
+    },
   ];

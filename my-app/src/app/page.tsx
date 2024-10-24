@@ -48,7 +48,7 @@ export default function LogIn() {
           </button>
 
           <div>
-            <p>Don't have an Account? <Link className='hover:text-black' href='/Register'> Go First Registered</Link></p>
+            <p>Don&apos;t have an Account? <Link className='hover:text-black' href='/Register'> Go First Registered</Link></p>
           </div>
 
         </form>
