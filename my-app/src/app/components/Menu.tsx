@@ -129,10 +129,10 @@ const menuItem = [
 
 const Menu = () => {
   return (
-    <div>
+    <div className="px-2 lg:px-0">
       {menuItem.map((section) => (
-        <div className="flex flex-col gap-1" key={section.title}>
-          <span className="hidden lg:block text-gray-500 font-semibold px-4">{section.title}</span>
+        <div className="flex flex-col gap-3" key={section.title}>
+          <span className="hidden lg:block text-gray-500 font-semibold px-4 my-4">{section.title}</span>
           {section.items?.map((item) =>
             item.visible.includes(role) ? (
               <Link
@@ -140,7 +140,7 @@ const Menu = () => {
                 key={item.label}
                 className="flex items-center justify-center lg:justify-start gap-4 text-gray-500 rounded-md hover:bg-lamaSky md:px-4"
               >
-                <span className="text-blue-900">{item.icon}</span>
+                <span className="">{item.icon}</span>
                 <span className="hidden lg:block">{item.label}</span>
               </Link>
             ) : null

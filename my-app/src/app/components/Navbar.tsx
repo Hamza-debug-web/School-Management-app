@@ -4,12 +4,12 @@ import { FaSearch, FaComments, FaBullhorn } from 'react-icons/fa'; // Font Aweso
 
 function Navbar() {
   return (
-    <div className='fixed top-0 w-[89%] md:w-[94%] lg:w-[86%] z-50 bg-white shadow-md'>
+    <div className='fixed top-0 w-[89%] md:w-[94%] lg:w-[86%] z-50 bg-white shadow-md '>
       <div className='flex items-center justify-between p-4'>
         {/* Search Bar */}
-        <div className='hidden md:flex items-center gap-3 relative rounded-full ring-[1.5px] ring-gray-300 px-2'>
-          <FaSearch className='absolute top-1/2 transform -translate-y-1/2 ml-1 text-blue-800' />
-          <input type="text" placeholder='Search...' className='pl-6 outline-none rounded-lg' />
+        <div className='hidden md:flex items-center gap-6 relative rounded-full ring-[1.5px] ring-gray-300 px-2 py-2'>
+          <FaSearch className='absolute top-1/2 transform -translate-y-1/2 ml-1 ' />
+          <input type="text" placeholder='Search...' className='pl-7 outline-none rounded-lg' />
         </div>
 
         {/* Icons And User */}

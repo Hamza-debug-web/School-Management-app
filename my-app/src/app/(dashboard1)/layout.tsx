@@ -3,7 +3,7 @@ import Image from "next/image";
 import Menu from "../components/Menu";
 import Navbar from "../components/Navbar";
 
-export default function RootLayout({
+export default function DashLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -12,7 +12,7 @@ export default function RootLayout({
     <>
       <div className="min-h-screen flex">
         {/* Left side (fixed sidebar) */}
-        <div className="fixed top-0 left-0 h-full w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] bg-white shadow-lg">
+        <div className="fixed top-0 left-0 h-scren w-[14%] md:w-[8%] lg:w-[16%] xl:w-[14%] bg-white shadow-lg">
           <Link
             href="/"
             className="flex items-center justify-center lg:justify-start gap-2 p-4"
@@ -21,7 +21,9 @@ export default function RootLayout({
             <span className="hidden lg:block font-bold">DAR-E-ARQAM</span>
           </Link>
 
-          <Menu />
+          <div className="overflow-y-auto h-[calc(100vh-76px)]"> {/* Adjusts height after logo */}
+    <Menu />
+  </div>
         </div>
 
         {/* Right side (content area) */}
