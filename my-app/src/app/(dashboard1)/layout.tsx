@@ -21,10 +21,10 @@ export default function DashLayout({
             <span className="hidden lg:block font-bold">DAR-E-ARQAM</span>
           </Link>
 
-          <div className="overflow-y-auto h-[calc(100vh-76px)]"> {/* Adjusts height after logo */}
-    <Menu />
-  </div>
-        </div>
+            <div className="overflow-hidden-scrollbar"> {/* Adjusts height after logo */}
+                <Menu />
+           </div>
+     </div>
 
         {/* Right side (content area) */}
         <div className="ml-[14%] md:ml-[8%] lg:ml-[16%] xl:ml-[14%] w-[86%] md:w-[92%] lg:w-[84%] xl:w-[86%]">

@@ -154,3 +154,18 @@
     display: none !important;
   }
   
+
+  .overflow-hidden-scrollbar {
+    overflow-y: auto;
+    height: calc(100vh - 76px);
+  }
+  
+  .overflow-hidden-scrollbar::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and newer versions of Edge */
+  }
+  
+  .overflow-hidden-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+  
