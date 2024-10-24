@@ -6,7 +6,7 @@ import Pagination from "@/app/components/Pagination";
 import Table from "@/app/components/Table";
 
 
-const coloms = [
+const columns = [
   {
     header: "Info",
     accessor: "info",
@@ -17,9 +17,28 @@ const coloms = [
     className: "hidden md:table-cell",
   },
   {
-    header: "Teacher ID",
-    accessor: "teacherId",
+    header: "Subjects",
+    accessor: "subjects",
     className: "hidden md:table-cell",
+  },
+  {
+    header: "Classes",
+    accessor: "classes",
+    className: "hidden md:table-cell",
+  },
+  {
+    header: "Phone",
+    accessor: "phone",
+    className: "hidden lg:table-cell",
+  },
+  {
+    header: "Address",
+    accessor: "address",
+    className: "hidden lg:table-cell",
+  },
+  {
+      header: "Action",
+      accessor: "action",
   },
 ]
 
@@ -42,10 +61,12 @@ const TeacherListPage = () => {
                </div> 
             </div>
         </div>
+
           {/* List */}
           <div className="">
-            <Table/>
+            <Table columns = {columns} />
           </div>
+
           {/* PAGINATION */}
           <div className="">
             <Pagination/>
