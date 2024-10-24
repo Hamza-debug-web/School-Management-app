@@ -5,6 +5,17 @@ import { BsSortDown } from "react-icons/bs";
 import Pagination from "@/app/components/Pagination";
 import Table from "@/app/components/Table";
 
+type Teacher = {
+  id:number;
+  TeacherId:number;
+  name:string;
+  email:string;
+  photo:string;
+  phone:string;
+  subjects:string[];
+  classes:string[];
+  address:string;
+}
 
 const columns = [
   {
@@ -45,6 +56,10 @@ const columns = [
 
 
 const TeacherListPage = () => {
+
+  
+   
+
     return (
         <div className="bg-white p-4 rounded-md flex-1 m-4 mt-8">TeachersList
          {/* Top section */}
