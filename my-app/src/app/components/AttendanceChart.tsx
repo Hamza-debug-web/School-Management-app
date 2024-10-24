@@ -30,7 +30,7 @@ const data = [
   
   },
   {
-    name: 'Fri',
+    name: 'Fri', 
     present: 85,
     absent: 55,
      
