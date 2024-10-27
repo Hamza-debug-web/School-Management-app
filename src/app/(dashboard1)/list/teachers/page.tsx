@@ -1,6 +1,6 @@
 import TableSearch from "@/app/components/TableSearch"
 import { GiSettingsKnobs } from "react-icons/gi";
-import { FaPlus, FaEye } from "react-icons/fa";
+import {  FaEye } from "react-icons/fa";
 import { BsSortDown} from "react-icons/bs";
 import Pagination from "@/app/components/Pagination";
 import Table from "@/app/components/Table";
@@ -8,6 +8,7 @@ import { MdDelete } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import { role, teachersData } from "@/app/lib/data";
+import FormModel from "@/app/components/FormModel";
 
 type Teacher = {
   id:number;
@@ -90,9 +91,11 @@ const TeacherListPage = () => {
             <FaEye/>
           </button></Link>
           {role === "admin" && (
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaPurple">
-            <MdDelete/>
-          </button>
+          //   <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaPurple">
+          //   <MdDelete/>
+          // </button>
+          <FormModel table="teacher"  type="delete" id={item.id}/>
+
           )}
         </div>
       </td>
@@ -116,9 +119,10 @@ const TeacherListPage = () => {
                  
                   
                   {role === "admin" && (
-                        <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow">
-                            <FaPlus/>
-                       </button>
+                      //   <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow">
+                      //       <FaPlus/>
+                      //  </button>
+                      <FormModel table="teacher"  type="create"/>
                      )}   
 
                 </div> 
