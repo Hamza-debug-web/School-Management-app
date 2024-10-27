@@ -1,5 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
+import { FaPhoneAlt, FaRegCalendarAlt  } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+import { BiSolidDonateBlood } from "react-icons/bi";
 
 
 function SingleTeacherpage() {
@@ -16,8 +19,8 @@ function SingleTeacherpage() {
         <div className='w-1/3'>
         <Image src="/images/boy1.png" 
         alt='Teacher Pic' 
-        width={100} 
-        height={100} 
+        width={140} 
+        height={140} 
         className='w-30 h-30 rounded-full object-cover'/>
         </div>
 
@@ -30,42 +33,22 @@ function SingleTeacherpage() {
         <div className='flex items-center justify-between gap-2 flex-wrap text-xs font-medium'>
 
            <div className='w-full md:w-1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2'>
-            <Image
-             src="/images/blood.webp"
-             alt = ""
-             width={14}
-             height={14}
-            />
+            <BiSolidDonateBlood/>
             <span>A+</span>
            </div>
 
            <div className='w-full md:w-1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2'>
-           <Image
-             src="/images/calender.png"
-             alt = ""
-             width={14}
-             height={14}
-            />
+           <FaRegCalendarAlt/>
             <span>January</span>
            </div>
 
            <div className='w-full md:w-1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2'>
-           <Image
-             src="/images/email.webp"
-             alt = ""
-             width={14}
-             height={14}
-            />
+            <IoMdMail/>
             <span>hk1557657@gmail.com</span>
            </div>
 
            <div className='w-full md:w-1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2'>
-           <Image
-             src="/images/phone.jpeg"
-             alt = ""
-             width={14}
-             height={14}
-            />
+            <FaPhoneAlt/>
             <span>078768986</span>
            </div>
 
