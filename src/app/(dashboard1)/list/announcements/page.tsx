@@ -1,12 +1,13 @@
 import TableSearch from "@/app/components/TableSearch";
 import { GiSettingsKnobs } from "react-icons/gi";
-import { FaPlus, FaEdit  } from "react-icons/fa";
+//import { FaPlus, FaEdit  } from "react-icons/fa";
 import { BsSortDown } from "react-icons/bs";
 import Pagination from "@/app/components/Pagination";
 import Table from "@/app/components/Table";
-import { MdDelete } from "react-icons/md";
-import Link from "next/link";
+//import { MdDelete } from "react-icons/md";
+//import Link from "next/link";
 import { AnnouncementData, role} from "@/app/lib/data";
+import FormModel from "@/app/components/FormModel";
 
 type Announcement = {
   id: number;
@@ -49,15 +50,20 @@ const AnnouncementListPage = () => {
       
       <td>
         <div className="flex items-center gap-2">
-          <Link href={`/list/teachers/${item.id}`}>
+          {/* <Link href={`/list/teachers/${item.id}`}>
             <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaSky">
               <FaEdit/>
             </button>
-          </Link>
+          </Link> */}
           {role === "admin" && (
-            <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaPurple">
-              <MdDelete />
-            </button>
+            // <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaPurple">
+            //   <MdDelete />
+            // </button>
+            <> 
+             <FormModel table="announcement"  type="update" data={item} />
+            <FormModel table="announcement"  type="delete" id={item.id} />
+            </>
+          
           )}
         </div>
       </td>
@@ -81,9 +87,11 @@ const AnnouncementListPage = () => {
               <BsSortDown />
             </button>
             {role === "admin" && (
-              <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow">
-                <FaPlus />
-              </button>
+              // <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow">
+              //   <FaPlus />
+              // </button>
+
+              <FormModel table="announcement"  type="create"  />
             )}
           </div>
         </div>
