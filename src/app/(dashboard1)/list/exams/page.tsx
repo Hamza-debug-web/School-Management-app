@@ -1,11 +1,11 @@
 import TableSearch from "@/app/components/TableSearch";
 import { GiSettingsKnobs } from "react-icons/gi";
-import { FaPlus, FaEdit  } from "react-icons/fa";
+//import { FaPlus, FaEdit  } from "react-icons/fa";
 import { BsSortDown } from "react-icons/bs";
 import Pagination from "@/app/components/Pagination";
 import Table from "@/app/components/Table";
-import { MdDelete } from "react-icons/md";
-import Link from "next/link";
+//import { MdDelete } from "react-icons/md";
+// import Link from "next/link";
 import {examsData, role} from "@/app/lib/data";
 import FormModel from "@/app/components/FormModel";
 
@@ -67,7 +67,7 @@ const ExamListPage = () => {
             // </button>
             <> 
               <FormModel table="exams"  type="update" data={item}/>
-            <FormModel table="exams"  type="delete" id={item.id}/>
+              <FormModel table="exams"  type="delete" id={item.id}/>
             </>
            
           )}
@@ -96,7 +96,6 @@ const ExamListPage = () => {
               // <button className="w-8 h-8 flex items-center justify-center rounded-full bg-lamaYellow">
               //   <FaPlus />
               // </button>
-
               <FormModel table="exams"  type="create" />
             )}
           </div>
