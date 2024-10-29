@@ -5,7 +5,7 @@ import { BsSortDown} from "react-icons/bs";
 import Pagination from "@/app/components/Pagination";
 import Table from "@/app/components/Table";
 // import { MdDelete } from "react-icons/md";
-import Link from "next/link";
+
 import { parentsData, role } from "@/app/lib/data";
 import FormModel from "@/app/components/FormModel";
 
@@ -65,18 +65,18 @@ const ParentListPage = () => {
 
       <td>
         <div className="flex items-center gap-2">
-          <Link href={`/list/teachers/${item.id}`}>
-          {/* <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaSky">
+          {/* <Link href={`/list/teachers/${item.id}`}>
+          <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaSky">
             <FaEdit/>
-          </button> */}
+          </button>
         
-          </Link>
+          </Link> */}
           {role === "admin" && (
           //   <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lamaPurple">
           //   <MdDelete/>
           // </button>
           <> 
-          <FormModel table="parent"  type="delete"/>
+          <FormModel table="parent"  type="delete" id={item.id}/>
           <FormModel table="parent"  type="update" data={item}/>
           </>
          
