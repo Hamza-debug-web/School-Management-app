@@ -13,6 +13,8 @@ const StudentForm = dynamic(() => import("./forms/StudentForm"), {
   loading: () => <h1>Loading...</h1>,
 });
 
+
+
 const form : {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string] :(type: "create" | "update", data?: any) => JSX.Element;
@@ -69,14 +71,14 @@ const Form = () => {
       <span className="text-center  font-medium">All data will be lost. Are you sure  you want  to delete this {table}?</span>
       <button className="bg-red-500 text-white py-2 px-4 rounded-md border-none w-max self-center">Delete</button>
     </form>
-  ) : (
-    type === "create" || type === "update" ? (
-       form[table](type, data)
-    ) : (
-      "Form not found"
-    )
-   
-  )
+  ) : 
+  // <TeacherForm type="update" data={data} />
+   type === "create" || type ==="update" ? (
+    form[table](type,data)
+   ) : (
+    "Form not found"
+   )
+  
 }
 
   return (
