@@ -19,6 +19,7 @@ const ParentForm = dynamic(() => import("./forms/ParentForm"), {
 
 
 
+
 const form : {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string] :(type: "create" | "update", data?: any) => JSX.Element;
@@ -82,7 +83,7 @@ const Form = () => {
     form[table](type,data)
    ) : (
     "Form not found"
-   )
+   ) 
   
 }
 
