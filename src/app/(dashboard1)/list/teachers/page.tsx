@@ -4,7 +4,7 @@ import {  FaEye } from "react-icons/fa";
 import { BsSortDown} from "react-icons/bs";
 import Pagination from "@/app/components/Pagination";
 import Table from "@/app/components/Table";
-import { MdDelete } from "react-icons/md";
+// import { MdDelete } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import { role, teachersData } from "@/app/lib/data";
