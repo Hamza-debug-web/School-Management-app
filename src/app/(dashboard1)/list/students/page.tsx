@@ -114,7 +114,7 @@ const StudentListPage = () => {
               <FormModel table="student"  type="create" />
                  )}
 
-               </div> 
+               </div>  
             </div>
         </div>
 
